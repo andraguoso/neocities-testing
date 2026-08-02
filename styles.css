@@ -1,13 +1,22 @@
-article/*, /*#blog*/,body {
-    background-color:oldlace ;
+article,
+body {
+    background-color: oldlace;
     width: 70%;
     margin: 0 auto;
     padding: 15px;
     height: 100vh;
 }
 
-h1 { 
-    color: black; 
+#blog {
+    background-color: oldlace;
+    width: 86%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
 }
 
 header {
@@ -40,6 +49,7 @@ nav {
     max-height: 90px;
     text-align: center;
 }
+
 .button:hover {
     color: #eeac76;
     padding: 8px;
@@ -51,53 +61,82 @@ nav {
     text-align: center;
 }
 
-img {
-  padding: 20px;
-  height: 150px;
-}
-
 .section {
     display: flex;
     flex-direction: row;
 }
 
-.card { /* blog, nopoint */
-    background-color:antiquewhite;
-    padding:8px;
-    margin:15px;
-    
+.card {
+    /* blog, nopoint */
+    background-color: antiquewhite;
+    padding: 8px;
+    margin: 15px;
+
 }
+
 #left {
     float: left;
     width: 75%;
 }
+
 #right {
     float: right;
     width: 25%;
 }
 
 #banner {
-    display:flex;
+    display: flex;
 }
 
 .account {
     background-color: bisque;
     border-radius: 5px;
-    color:#91490e;
-    padding:5px; margin:5px;
+    color: #91490e;
+    padding: 5px;
+    margin: 5px;
 }
 
-.artist, .artist-desc.open {
+.artist,
+.artist-desc.open {
     background-color: bisque;
-    padding:10px; margin:5px;
+    padding: 10px;
+    margin: 5px;
     border-radius: 5px;
 }
+
 .artist-desc.open {
-    max-height:fit-content;
-    display:flex;
+    max-height: fit-content;
+    display: flex;
 }
+
 .artist-desc {
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    /*transition: max-height 0.3s ease;*/
+}
+
+.artist-pic {
+    height: 150px;
+    padding: 20px;
+}
+
+.songs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.song-cover {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
