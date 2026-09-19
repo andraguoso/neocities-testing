@@ -135,7 +135,7 @@ nav {
 .song-cover {
     width: 70px;
     height: 70px;
-    object-fit: cover;
+    /*object-fit: cover;*/
     border-radius: 10px;
     padding: 5px;
 }
